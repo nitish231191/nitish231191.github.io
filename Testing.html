@@ -1,0 +1,170 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+<title>Technology shopping environment</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css"  media="all" />
+		<meta name="keywords" content="Mobilestore" />
+		<link href='http://fonts.googleapis.com/css?family=Londrina+Solid|Coda+Caption:800|Open+Sans' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/responsiveslides.css">
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="/resources/demos/style.css">
+		<script src="js/jquery.easy-autocomplete.min.js"></script> 
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="Tipue drop 5.0.2/tipuedrop/tipuedrop/tipuedrop_content.js"></script>
+         <link href="Tipue drop 5.0.2/tipuedrop/tipuedrop/tipuedrop.css" rel="stylesheet">
+        <script src="Tipue drop 5.0.2/tipuedrop/tipuedrop/tipuedrop.min.js"></script>
+		<link rel ="stylesheet" href ="css/easy-autocomplete.min.css">
+        <link rel="stylesheet" href="cs/easy-autocomplete.themes.min.css"> 
+		<script src= "js/jquery-3.1.1.min.js"></script>
+		</head>
+		
+	<body>
+	
+	
+	</body>
+<div class="wrap">
+		<!----start-Header---->
+		<div class="header">
+			<div class="clear"> </div>
+			<div class="clear"> </div>
+		</div>
+		</div>
+		<div class="clear"> </div>
+		<div class="top-header">
+			<div class="wrap">
+		<!----start-logo---->
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.png" title="logo" /></a>
+			
+			</div>
+		<!----end-logo---->
+		<!----start-top-nav---->
+	
+	<div class ="ui-widget">
+	<input type="text" id="searchtextbox"  style="margin-left:20px;margin-top:10px;line-height:15px;width:50%"  />
+	<script>
+var options = {
+	data: ["blue", "green", "pink", "red", "yellow"]
+};
+
+   
+("#searchtextbox").easyAutocomplete(options)
+
+
+</script>
+	
+	<input type ="submit"  id ="query" onclick="loadanotherpage()"  />
+	<script>
+	var input = document.getElementById("searchtextbox");
+	input.addEventListener("keydown", function (e) {
+    if (e.keyCode === 13) {  //checks whether the pressed key is "Enter"
+      switch (input.value.toLowerCase()) {
+    case "iphone":
+		 window.location.href = "Iphone.html";
+        break;
+    case "Samsung":
+        window.location.href ="Samsung.html";
+        break;
+    case "Nexus":
+        window.location.href ="Nexus.html";
+        break;
+    default:
+	window.location.href ="No_results.html";
+	break;
+}
+    }
+});
+
+
+	function loadanotherpage(){
+	var input = document.getElementById("searchtextbox").value;
+	switch (input.toLowerCase()) {
+   case "iphone":
+		 window.location.href = "Iphone.html";
+        break;
+    case "Samsung":
+        window.location.href ="Samsung.html";
+        break;
+    case "Nexus":
+        window.location.href ="Nexus.html";
+        break;
+		default:
+	window.location.href ="No_results.html";
+	break;
+    
+}
+
+
+	
+	}
+	</script
+	</div>
+		</div>
+				
+			<div class="col_1_of_4 span_1_of_4 footer-lastgrid" >
+					<h3></h3>
+					<!-- <input type="text"><input type="submit" value="go" /> -->
+					<h3>Log in with:</h3>
+					 <ul>
+					
+					 	<li><a href="https://twitter.com"><img src="images/twitter.png" title="twitter" />Twitter</a></li>
+						<li><a href="http://facebook.com"><img src="images/facebook.png" title="Facebook" />Facebook</a></li>
+						
+						
+					 </ul>
+				</div>	
+				
+			
+		
+		
+		    	<div class="content-sidebar">
+		    		<h4>Categories</h4>
+						<ul>
+							<li><a href="#">Accord Mobiles</a></li>
+							<li><a href="#">Ace Mobile</a></li>
+							<li><a href="#">Acer Mobile</a></li>
+							<li><a href="#">Airfone</a></li>
+							<li><a href="#">Apple</a></li>
+							<li><a href="#">Blackberry</a></li>
+							<li><a href="#">Byond Tech</a></li>
+							<li><a href="#">Celkon Mobiles</a></li>
+							<li><a href="#">Dell Mobile Phones </a></li>
+							<li><a href="#">Fly Mobile</a></li>
+							<li><a href="#">Fujezone Mobiles </a></li>
+							<li><a href="#">HTC</a></li>
+							<li><a href="#">LG Mobiles</a></li>
+							<li><a href="#">Longtel Mobile</a></li>
+							<li><a href="#">Maxx</a></li>
+							<li><a href="#">Micromax Mobiles </a></li>
+							<li><a href="#">Samsung Mobiles</a></li>
+							<li><a href="#">Sony Ericsson Mobiles</a></li>
+							<li><a href="#">Wynncom Mobiles</a></li>
+						</ul>
+		    	</div>
+		    </div>
+		    <div class="clear"> </div>
+		    </div>
+		<div class="footer">
+			<div class="wrap">
+			<div class="section group">
+			
+				
+			</div>
+		</div>
+		
+		<div class="clear"> </div>
+		<div class="wrap">
+		<div class="copy-right">
+			<p>Tech shopping:  implemented</a></p>
+		</div>
+		</div>
+		</div>
+		<script>
+$(document).ready(function() {
+     $('#tipue_drop_input').tipuedrop();
+});
+</script>
+	</body>
+</html>
